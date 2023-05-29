@@ -10,7 +10,8 @@ namespace AddressBookProblem
             while (true)
             {
 
-                Console.WriteLine("Enter The Choice \n1)Fibonacci Serries\n2)Perfect Number\n3)Prime Number");
+                Console.WriteLine("Enter The Choice \n1)Fibonacci Serries\n2)Perfect Number\n3)Prime Number" +
+                    "\n4)Revers Number");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -25,6 +26,10 @@ namespace AddressBookProblem
                     case 3:
                         PrimeNumber primeNumber=new PrimeNumber();
                         primeNumber.pnumber();
+                        break;
+                    case 4:
+                        ReverseNumber reverseNumber=new ReverseNumber();
+                        reverseNumber.RevNumber();
                         break;
                     default:
                         Console.WriteLine("Enter the Correct Choice");
