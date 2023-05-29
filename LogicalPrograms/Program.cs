@@ -11,7 +11,7 @@ namespace AddressBookProblem
             {
 
                 Console.WriteLine("Enter The Choice \n1)Fibonacci Serries\n2)Perfect Number\n3)Prime Number" +
-                    "\n4)Revers Number");
+                    "\n4)Revers Number\n5)Stop Watch");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -30,6 +30,10 @@ namespace AddressBookProblem
                     case 4:
                         ReverseNumber reverseNumber=new ReverseNumber();
                         reverseNumber.RevNumber();
+                        break;
+                    case 5:
+                        StopWatch stopWatch=new StopWatch();
+                        stopWatch.Watch();
                         break;
                     default:
                         Console.WriteLine("Enter the Correct Choice");
