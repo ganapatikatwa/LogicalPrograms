@@ -10,13 +10,20 @@ namespace AddressBookProblem
             while (true)
             {
 
-                Console.WriteLine("Enter The Choice \n1)Fibonacci Serries");
+                Console.WriteLine("Enter The Choice \n1)Fibonacci Serries\n2)Perfect Number");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
                     case 1:
                         FibonacciSeries fibonacciSeries=new FibonacciSeries();
                         fibonacciSeries.FSeries();
+                        break;
+                    case 2:
+                        PerfectNumber perfectNumber=new PerfectNumber();
+                        perfectNumber.PNumber();
+                        break;
+                    default:
+                        Console.WriteLine("Enter the Correct Choice");
                         break;
 
                 }
