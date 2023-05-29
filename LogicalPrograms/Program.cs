@@ -10,7 +10,7 @@ namespace AddressBookProblem
             while (true)
             {
 
-                Console.WriteLine("Enter The Choice \n1)Fibonacci Serries\n2)Perfect Number");
+                Console.WriteLine("Enter The Choice \n1)Fibonacci Serries\n2)Perfect Number\n3)Prime Number");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -21,6 +21,10 @@ namespace AddressBookProblem
                     case 2:
                         PerfectNumber perfectNumber=new PerfectNumber();
                         perfectNumber.PNumber();
+                        break;
+                    case 3:
+                        PrimeNumber primeNumber=new PrimeNumber();
+                        primeNumber.pnumber();
                         break;
                     default:
                         Console.WriteLine("Enter the Correct Choice");
